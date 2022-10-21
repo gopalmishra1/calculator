@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">mycalculator</string>
+    <string name="divide">/</string>
+    <string name="multiplication">*</string>
+</resources>
