@@ -29,6 +29,6 @@ class MainActivity : AppCompatActivity() {
    // }
 
     fun onclear(view: View){
-        ramji?.text="dj"
+        ramji?.text=""
     }
 }
