@@ -24,7 +24,11 @@ class MainActivity : AppCompatActivity() {
         ramji?.append((view as Button).text)
 
     }
+    //fun onclear(view: View){
+      //  ramji?.text=""
+   // }
+
     fun onclear(view: View){
-        ramji?.text=""
+        ramji?.text="dj"
     }
 }
