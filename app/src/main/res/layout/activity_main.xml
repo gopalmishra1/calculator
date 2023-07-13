@@ -12,7 +12,7 @@
         android:id="@+id/ramji"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="@color/obj"
+        android:background="@color/white"
         android:gravity="right|bottom"
         android:padding="10dp"
         android:text=""
@@ -32,8 +32,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="7"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/y"
+            android:layout_margin="5dp"
             android:onClick="myname"/>
         <Button
             android:id="@+id/buttoneight"
@@ -41,8 +43,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="8"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/y"
+            android:layout_margin="5dp"
             android:onClick="myname"/>
         <Button
             android:id="@+id/buttonnine"
@@ -50,8 +54,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="9"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/y"
+            android:layout_margin="5dp"
             android:onClick="myname"/>
         <Button
             android:id="@+id/buttondivide"
@@ -59,9 +65,11 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/divide"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:onClick="myname"/>
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/y"
+            android:layout_margin="5dp"
+            android:onClick="onoperator"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -75,8 +83,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="4"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/y"
+            android:layout_margin="5dp"
             android:onClick="myname"/>
         <Button
             android:id="@+id/buttonfive"
@@ -84,8 +94,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="5"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/y"
+            android:layout_margin="5dp"
             android:onClick="myname"/>
         <Button
             android:id="@+id/buttonsix"
@@ -93,8 +105,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="6"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/y"
+            android:layout_margin="5dp"
             android:onClick="myname"/>
         <Button
             android:id="@+id/button100"
@@ -102,9 +116,11 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="@string/multiplication"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:onClick="myname"/>
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/y"
+            android:layout_margin="5dp"
+            android:onClick="onoperator"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -118,17 +134,21 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="1"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/y"
+            android:layout_margin="5dp"
             android:onClick="myname"/>
         <Button
             android:id="@+id/buttontwo"
             android:layout_width="10dp"
             android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:text="2"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/y"
+            android:layout_margin="5dp"
             android:onClick="myname"/>
         <Button
             android:id="@+id/buttonthree"
@@ -136,18 +156,22 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="3"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/y"
+            android:layout_margin="5dp"
             android:onClick="myname"/>
         <Button
-            android:id="@+id/button100"
+            android:id="@+id/button101"
             android:layout_width="10dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="+"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:onClick="myname"/>
+            android:text="-"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/y"
+            android:layout_margin="5dp"
+            android:onClick="onoperator"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -156,32 +180,55 @@
         android:layout_weight="1">
 
         <Button
-            android:id="@+id/buttonseven"
-            android:layout_width="10dp"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:text="0"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:onClick="myname"/>
-        <Button
-            android:id="@+id/buttoneight"
+            android:id="@+id/buttonzero"
             android:layout_width="10dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="-"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
+            android:text="0"
+
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/y"
+            android:layout_margin="5dp"
             android:onClick="myname"/>
         <Button
-            android:id="@+id/buttonnine"
+            android:id="@+id/buttonclr"
             android:layout_width="10dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="clr"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
+
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/y"
+            android:layout_margin="5dp"
+
             android:onClick="onclear"/>
+        <Button
+            android:id="@+id/buttondoit"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="."
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/y"
+            android:layout_margin="5dp"
+            android:onClick="onDecimalpoint"
+            tools:ignore="usingOnClickInXml"/>
+        <Button
+            android:id="@+id/button102"
+
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="+"
+
+            android:onClick="onoperator"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/y"
+            android:layout_margin="5dp"/>
 
     </LinearLayout>
     <LinearLayout
@@ -196,9 +243,12 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="="
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            android:onClick="myname"/>
+
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/y"
+            android:layout_margin="10dp"
+            android:onClick="onequal"/>
 
 
 </LinearLayout>
